@@ -29,11 +29,18 @@ FLAG content that is:
 - Sexual or explicitly inappropriate content
 - Violent threats or harmful language toward others
 - Spam, promotional content, or clearly off-topic material
+- Religious or moral judgment of the deceased (implying they deserved death, were punished by a higher power, or are condemned)
+
+Note on religious language: Religious and spiritual expressions are welcome when comforting, but NOT when:
+- Implying the deceased is being punished or judged by a higher power
+- Suggesting they deserved their death due to divine/moral judgment
+- Using religious concepts to condemn, diminish, or cast negative judgment on the deceased
 
 DO NOT FLAG:
 - Emotional expressions of grief, even with profanity (e.g., "I fucking miss you", "This is so damn unfair")
 - Anger at death, illness, or circumstances (e.g., "Fuck cancer", "Damn this disease")
 - Raw authentic feelings about loss (e.g., "I'm so fucking sad", "Why the hell did this happen")
+- Comforting religious/spiritual beliefs about the afterlife (e.g., "They're with God now", "Heaven gained an angel", "May they find peace in the next life")
 - Cultural or religious expressions that may seem strong but are contextually appropriate
 
 Rules:
@@ -50,7 +57,12 @@ Examples:
 - "Rest in peace you stupid bitch" → ["stupid bitch"]
 - "Why the hell did this happen to someone so good" → []
 - "Damn I wish you were still here" → []
-- "Go to hell, you deserved this" → ["Go to hell, you deserved this"]`;
+- "Go to hell, you deserved this" → ["Go to hell, you deserved this"]
+- "God has judged them" → ["God has judged them"]
+- "They're paying for their sins now" → ["paying for their sins"]
+- "God punished them for their choices" → ["God punished them for their choices"]
+- "They're with God now, at peace" → []
+- "Heaven gained an angel today" → []`;
 
 const EXAMPLE_CASES = [
   'I fucking miss you so much',

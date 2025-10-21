@@ -45,6 +45,7 @@ DO NOT FLAG:
 
 Rules:
 - Only return words/phrases that make the content genuinely inappropriate for a memorial
+- Return the EXACT text as written - preserve original capitalization, spelling, and formatting without any modifications
 - Support multiple languages
 - Detect obfuscated attempts to bypass moderation (e.g., "f@ggot", "n1gger", "b1tch" used as insult)
 - When in doubt, allow the content - err on the side of authentic grief expression
@@ -59,6 +60,7 @@ Examples:
 - "Damn I wish you were still here" → []
 - "Go to hell, you deserved this" → ["Go to hell, you deserved this"]
 - "God has judged them" → ["God has judged them"]
+- "god has judged them" → ["god has judged them"]
 - "They're paying for their sins now" → ["paying for their sins"]
 - "God punished them for their choices" → ["God punished them for their choices"]
 - "They're with God now, at peace" → []
